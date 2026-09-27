@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "modprueba",
+	"version": "${version}",
+	"name": "ModPrueba",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/modprueba/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.exactus.modprueba.ModPrueba"
+		],
+		"client": [
+			"dev.exactus.modprueba.client.ModPruebaClient"
+		],
+		"fabric-datagen": [
+			"dev.exactus.modprueba.client.ModPruebaDataGenerator"
+		]
+	},
+	"mixins": [
+		"modprueba.mixins.json",
+		{
+			"config": "modprueba.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
