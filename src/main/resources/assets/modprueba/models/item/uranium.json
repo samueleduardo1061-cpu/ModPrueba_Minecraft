@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "modprueba:item/endite_sword"
+    "layer0": "modprueba:item/endite_ore"
   }
 }
