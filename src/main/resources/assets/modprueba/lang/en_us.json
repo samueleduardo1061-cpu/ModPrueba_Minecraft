@@ -1,4 +1,5 @@
 {
-  "item.modprueba.uranium": "Espada de endite",
-  "itemgroup.modprueba.uranium_group": "Items de Uranio"
+  "item.modprueba.uranium": "Espada de Endite",
+  "itemgroup.modprueba.uranium_group": "Items de Uranio",
+  "block.modprueba.uranium_block": "Bloque de Endite"
 }

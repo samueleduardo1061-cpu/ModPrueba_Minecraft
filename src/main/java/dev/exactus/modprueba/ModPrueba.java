@@ -1,5 +1,6 @@
 package dev.exactus.modprueba;
 
+import dev.exactus.modprueba.blocks.ModBlocks;
 import dev.exactus.modprueba.items.ModItemGroups;
 import dev.exactus.modprueba.items.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -23,6 +24,7 @@ public class ModPrueba implements ModInitializer {
 	public void onInitialize() {
 		ModItems.registerItems();
 		ModItemGroups.registerItemGroups();
+		ModBlocks.registerBlocks();
 
 		ServerLifecycleEvents.SERVER_STARTING.register(server -> SERVER = server);
 		ServerLifecycleEvents.SERVER_STOPPING.register(server -> SERVER = null);
