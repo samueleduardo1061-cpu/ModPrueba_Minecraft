@@ -13,9 +13,11 @@ public class ModItems {
     public static final Item Uranium = registerItem("uranium", new Item(new Item.Settings()));
 
 
+
     private static Item registerItem(String itemId, Item item){
         return Registry.register(Registries.ITEM, new Identifier(ModPrueba.MOD_ID, itemId),item);
     }
+
 
     public static void registerItems(){
         ModPrueba.LOGGER.info("Registrando items...");

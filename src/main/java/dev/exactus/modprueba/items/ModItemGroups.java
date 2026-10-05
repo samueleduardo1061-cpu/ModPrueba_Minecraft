@@ -1,6 +1,7 @@
 package dev.exactus.modprueba.items;
 
 import dev.exactus.modprueba.ModPrueba;
+import dev.exactus.modprueba.blocks.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -19,12 +20,15 @@ public class ModItemGroups {
                     .icon(()-> new ItemStack(ModItems.Uranium))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.Uranium);
+                        //bloque del ore de endite
+                        entries.add(ModBlocks.URANIUM_BLOCK.getLeft());
                     })
                     .build()
     );
 
     private static ItemGroup registerItemGroup(String itemGroupId, ItemGroup itemGroup){
         return Registry.register(Registries.ITEM_GROUP, new Identifier(ModPrueba.MOD_ID, itemGroupId),itemGroup);
+
     }
 
     public static void registerItemGroups(){
