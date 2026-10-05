@@ -8,6 +8,7 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 
 
+import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
 import net.minecraft.server.MinecraftServer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,6 +26,8 @@ public class ModPrueba implements ModInitializer {
 		ModItems.registerItems();
 		ModItemGroups.registerItemGroups();
 		ModBlocks.registerBlocks();
+
+
 
 		ServerLifecycleEvents.SERVER_STARTING.register(server -> SERVER = server);
 		ServerLifecycleEvents.SERVER_STOPPING.register(server -> SERVER = null);
